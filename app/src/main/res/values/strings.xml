@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Gasoline Aberdeen</string>
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+    <string name="home">Home</string>
+    <string name="exit">Exit</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="share">share</string>
+    <string name="database">Database</string>
+    <string name="load">Load</string>
+    <string name="name">Name</string>
+    <string name="Diesel">Diesel</string>
+    <string name="Petrol">Petrol</string>
+    <string name="add">Add</string>
+    <string name="load_all">sort all\nA-Z</string>
+    <string name="Min">Min</string>
+    <string name="Max">Max</string>
+    <string name="filter_petrol">filter\n petrol</string>
+    <string name="filter_diesel">filter\ndiesel</string>
+    <string name="sort_dist">sort dist.</string>
+    <string name="max_dist">Max Dist. (km)</string>
+    <string name="min_max_pence_per_litre">Min/Max Pence per Litre:</string>
+    <string name="maximum_distance_km">Maximum Distance (km):</string>
+    <string-array name="names">
+        <item> Share  </item>
+        <item> Exit  </item>
+    </string-array>
+</resources>

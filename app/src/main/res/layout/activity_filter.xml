@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".FilterActivity">
+
+        <TextView android:id="@+id/simpleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min_max_pence_per_litre" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/edit_text_Min"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/Min"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/edit_text_Max"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/Max"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/simpleTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maximum_distance_km" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <EditText
+                android:id="@+id/edit_text_MaxDist"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:hint="@string/max_dist"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="loadNotes"
+                android:text="@string/load_all" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="filterp"
+                android:text="@string/filter_petrol"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="filterd"
+                android:text="@string/filter_diesel"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+            <TextView
+                android:id="@+id/text_view_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+        </ScrollView>
+
+
+
+        <!-- <android.support.v4.widget.NestedScrollView-->
+        <!-- android:layout_width="match_parent"-->
+        <!-- android:layout_height="wrap_content">-->
+
+        <!-- <TextView-->
+        <!-- android:id="@+id/text_view_data"-->
+        <!-- android:layout_width="wrap_content"-->
+        <!-- android:layout_height="wrap_content"-->
+        <!-- android:textSize="20sp" />-->
+
+        <!-- </android.support.v4.widget.NestedScrollView>-->
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>
